@@ -3,11 +3,11 @@ address = "ZuluSwapPooL111111111111111111111111111111"
 program = "programs/zuluswap_pool_solana.so"
 
 [[test.genesis]]
-address = "KyberSwapFactory111111111111111111111111111"
+address = "ZuluSwapFactory111111111111111111111111111"
 program = "programs/zuluswap_factory_solana.so"
 
 [[test.genesis]]
-address = "KyberSwapRouter1111111111111111111111111111"
+address = "ZuluSwapRouter1111111111111111111111111111"
 program = "programs/zuluswap_router_solana.so"
 
 [registry]

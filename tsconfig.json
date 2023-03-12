@@ -1,21 +1,31 @@
 {
   "compilerOptions": {
-    "types": ["mocha", "chai", "bn.js"],
-    "typeRoots": ["./node_modules/@types"],
-    "lib": ["es2015", "es2020"],
-    "module": "commonjs",
-    "target": "es6",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "esModuleInterop": true,
+    "module": "esnext",
+    "strict": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": false,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
     "moduleResolution": "node",
-    "outDir": "dist",
-    "declaration": true,
-    "declarationMap": true
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["jest"],
+    "baseUrl": "src",
+    "useUnknownInCatchVariables": false
   },
-  "exclude": [
-    "node_modules/**",
-    "tests",
-    "examples",
-    "dist"
-  ]
+  "exclude": ["node_modules", "cypress"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }

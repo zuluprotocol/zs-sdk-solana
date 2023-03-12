@@ -37,7 +37,10 @@
     "tsc": "^2.0.4",
     "typescript": "^4.3.5"
   },
-  "repository": "git@github.com:zuluprotocol/dmm-solana-sdk.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zuluprotocol/dmm-solana-sdk.git"
+  },
   "scripts": {
     "run-example": "ts-node $3",
     "test": "anchor test",
@@ -49,5 +52,13 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "all"
+  },
+  "types": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/zuluprotocol/dmm-solana-sdk/issues"
+  },
+  "homepage": "https://github.com/zuluprotocol/dmm-solana-sdk#readme",
+  "directories": {
+    "doc": "docs"
   }
 }
